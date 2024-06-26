@@ -3,3 +3,8 @@ source ~/.local/share/omakub/defaults/bash/rc
 # Editor used by CLI
 export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
+
+# include .bash_profile if it exists
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile
+fi
